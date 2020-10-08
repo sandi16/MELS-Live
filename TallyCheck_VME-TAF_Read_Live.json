@@ -1,0 +1,1039 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLYCHECK_VME_TAF": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLYCHECK_VME_TAF"
+				],
+				"description": "Read TALLYCHECK VMETAF",
+				"operationId": "Read_TALLYCHECK_VMETAF",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"PRODUCT_CODE_R1": null,
+							"PRODUCT_CODE_R2": null,
+							"PRODUCT_CODE_R3": null,
+							"PRODUCT_CODE_R4": null,
+							"PRODUCT_CODE_R5": null,
+							"PRODUCT_CODE_R6": null,
+							"PRODUCT_CODE_R7": null,
+							"PRODUCT_CODE_R8": null,
+							"PRODUCT_CODE_R9": null,
+							"PRODUCT_CODE_R10": null,
+							"PRODUCT_CODE_R11": null,
+							"PRODUCT_CODE_R12": null,
+							"PRODUCT_CODE_R13": null,
+							"PRODUCT_CODE_R14": null,
+							"PRODUCT_CODE_R15": null,
+							"LOT_R1": null,
+							"LOT_R2": null,
+							"LOT_R3": null,
+							"LOT_R4": null,
+							"LOT_R5": null,
+							"LOT_R6": null,
+							"LOT_R7": null,
+							"LOT_R8": null,
+							"LOT_R9": null,
+							"LOT_R10": null,
+							"LOT_R11": null,
+							"LOT_R12": null,
+							"LOT_R13": null,
+							"LOT_R14": null,
+							"LOT_R15": null,
+							"PACKING_TYPE_R1": null,
+							"PACKING_TYPE_R2": null,
+							"PACKING_TYPE_R3": null,
+							"PACKING_TYPE_R4": null,
+							"PACKING_TYPE_R5": null,
+							"PACKING_TYPE_R6": null,
+							"PACKING_TYPE_R7": null,
+							"PACKING_TYPE_R8": null,
+							"PACKING_TYPE_R9": null,
+							"PACKING_TYPE_R10": null,
+							"PACKING_TYPE_R11": null,
+							"PACKING_TYPE_R12": null,
+							"PACKING_TYPE_R13": null,
+							"PACKING_TYPE_R14": null,
+							"PACKING_TYPE_R15": null,
+							"TALLY_DETAILS_R1C1": null,
+							"TALLY_DETAILS_R1C2": null,
+							"TALLY_DETAILS_R1C3": null,
+							"TALLY_DETAILS_R1C4": null,
+							"TALLY_DETAILS_R1C5": null,
+							"TALLY_DETAILS_R2C1": null,
+							"TALLY_DETAILS_R2C2": null,
+							"TALLY_DETAILS_R2C3": null,
+							"TALLY_DETAILS_R2C4": null,
+							"TALLY_DETAILS_R2C5": null,
+							"TALLY_DETAILS_R3C1": null,
+							"TALLY_DETAILS_R3C2": null,
+							"TALLY_DETAILS_R3C3": null,
+							"TALLY_DETAILS_R3C4": null,
+							"TALLY_DETAILS_R3C5": null,
+							"TALLY_DETAILS_R4C1": null,
+							"TALLY_DETAILS_R4C2": null,
+							"TALLY_DETAILS_R4C3": null,
+							"TALLY_DETAILS_R4C4": null,
+							"TALLY_DETAILS_R4C5": null,
+							"TALLY_DETAILS_R5C1": null,
+							"TALLY_DETAILS_R5C2": null,
+							"TALLY_DETAILS_R5C3": null,
+							"TALLY_DETAILS_R5C4": null,
+							"TALLY_DETAILS_R5C5": null,
+							"TALLY_DETAILS_R6C1": null,
+							"TALLY_DETAILS_R6C2": null,
+							"TALLY_DETAILS_R6C3": null,
+							"TALLY_DETAILS_R6C4": null,
+							"TALLY_DETAILS_R6C5": null,
+							"TALLY_DETAILS_R7C1": null,
+							"TALLY_DETAILS_R7C2": null,
+							"TALLY_DETAILS_R7C3": null,
+							"TALLY_DETAILS_R7C4": null,
+							"TALLY_DETAILS_R7C5": null,
+							"TALLY_DETAILS_R8C1": null,
+							"TALLY_DETAILS_R8C2": null,
+							"TALLY_DETAILS_R8C3": null,
+							"TALLY_DETAILS_R8C4": null,
+							"TALLY_DETAILS_R8C5": null,
+							"TALLY_DETAILS_R9C1": null,
+							"TALLY_DETAILS_R9C2": null,
+							"TALLY_DETAILS_R9C3": null,
+							"TALLY_DETAILS_R9C4": null,
+							"TALLY_DETAILS_R9C5": null,
+							"TALLY_DETAILS_R10C1": null,
+							"TALLY_DETAILS_R10C2": null,
+							"TALLY_DETAILS_R10C3": null,
+							"TALLY_DETAILS_R10C4": null,
+							"TALLY_DETAILS_R10C5": null,
+							"TALLY_DETAILS_R11C1": null,
+							"TALLY_DETAILS_R11C2": null,
+							"TALLY_DETAILS_R11C3": null,
+							"TALLY_DETAILS_R11C4": null,
+							"TALLY_DETAILS_R11C5": null,
+							"TALLY_DETAILS_R12C1": null,
+							"TALLY_DETAILS_R12C2": null,
+							"TALLY_DETAILS_R12C3": null,
+							"TALLY_DETAILS_R12C4": null,
+							"TALLY_DETAILS_R12C5": null,
+							"TALLY_DETAILS_R13C1": null,
+							"TALLY_DETAILS_R13C2": null,
+							"TALLY_DETAILS_R13C3": null,
+							"TALLY_DETAILS_R13C4": null,
+							"TALLY_DETAILS_R13C5": null,
+							"TALLY_DETAILS_R14C1": null,
+							"TALLY_DETAILS_R14C2": null,
+							"TALLY_DETAILS_R14C3": null,
+							"TALLY_DETAILS_R14C4": null,
+							"TALLY_DETAILS_R14C5": null,
+							"TALLY_DETAILS_R15C1": null,
+							"TALLY_DETAILS_R15C2": null,
+							"TALLY_DETAILS_R15C3": null,
+							"TALLY_DETAILS_R15C4": null,
+							"TALLY_DETAILS_R15C5": null,
+							"TOTAL_QTY_R1": null,
+							"TOTAL_QTY_R2": null,
+							"TOTAL_QTY_R3": null,
+							"TOTAL_QTY_R4": null,
+							"TOTAL_QTY_R5": null,
+							"TOTAL_QTY_R6": null,
+							"TOTAL_QTY_R7": null,
+							"TOTAL_QTY_R8": null,
+							"TOTAL_QTY_R9": null,
+							"TOTAL_QTY_R10": null,
+							"TOTAL_QTY_R11": null,
+							"TOTAL_QTY_R12": null,
+							"TOTAL_QTY_R13": null,
+							"TOTAL_QTY_R14": null,
+							"TOTAL_QTY_R15": null,
+							"TOTAL_QTY_R16": null,
+							"TOTAL_QTY_R17": null,
+							"TOTAL_QTY_R18": null,
+							"LEFT_R1": null,
+							"LEFT_R2": null,
+							"LEFT_R3": null,
+							"LEFT_R4": null,
+							"LEFT_R5": null,
+							"LEFT_R6": null,
+							"LEFT_R7": null,
+							"LEFT_R8": null,
+							"LEFT_R9": null,
+							"LEFT_R10": null,
+							"LEFT_R11": null,
+							"LEFT_R12": null,
+							"LEFT_R13": null,
+							"LEFT_R14": null,
+							"LEFT_R15": null,
+							"LEFT_R16": null,
+							"LEFT_R17": null,
+							"LEFT_R18": null,
+							"RIGTH_R1": null,
+							"RIGTH_R2": null,
+							"RIGTH_R3": null,
+							"RIGTH_R4": null,
+							"RIGTH_R5": null,
+							"RIGTH_R6": null,
+							"RIGTH_R7": null,
+							"RIGTH_R8": null,
+							"RIGTH_R9": null,
+							"RIGTH_R10": null,
+							"RIGTH_R11": null,
+							"RIGTH_R12": null,
+							"RIGTH_R13": null,
+							"RIGTH_R14": null,
+							"RIGTH_R15": null,
+							"RIGTH_R16": null,
+							"RIGTH_R17": null,
+							"RIGTH_R18": null,
+							"TALLY_CHECK_BY": null,
+							"TALLY_CHECK_DATE": "2020-06-22T00:00:00",
+							"COUNTER_CHECK_BY": null,
+							"COUNTER_CHECK_DATE": "2020-06-22T00:00:00",
+							"GRAND_TOTAL": null,
+							"CARGO_GROSS_WEIGHT": null,
+							"MATERIAL_WEIGHT": null,
+							"TOTAL_WEIGHT": null,
+							"VIN_TOTAL_WEIGHT": null,
+							"K2_STATUS": null,
+							"PHOTOCHECK": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallyCheckVMETAF"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallyCheckVMETAF": {
+			"description": "Model for ReadTallyCheckVMETAF",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCT_CODE_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R1C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R1C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R1C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R1C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R1C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R2C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R2C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R2C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R2C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R2C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R3C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R3C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R3C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R3C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R3C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R4C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R4C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R4C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R4C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R4C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R5C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R5C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R5C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R5C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R5C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R6C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R6C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R6C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R6C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R6C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R7C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R7C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R7C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R7C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R7C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R8C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R8C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R8C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R8C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R8C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R9C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R9C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R9C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R9C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R9C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R10C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R10C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R10C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R10C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R10C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R11C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R11C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R11C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R11C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R11C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R12C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R12C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R12C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R12C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R12C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R13C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R13C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R13C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R13C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R13C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R14C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R14C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R14C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R14C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R14C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R15C1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R15C2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R15C3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R15C4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_DETAILS_R15C5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R16": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R17": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R16": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R17": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R16": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R17": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_CHECK_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"COUNTER_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COUNTER_CHECK_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"GRAND_TOTAL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_GROSS_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"MATERIAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TOTAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PHOTOCHECK": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLYCHECK_VME_TAF",
+			"description": "Operations about TBLEDI_MELS_TALLYCHECK_VME_TAF"
+		}
+	]
+}
