@@ -1,0 +1,371 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210/",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_CARGO": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_CARGO"
+				],
+				"description": "Read Cargo",
+				"operationId": "Read_Cargo",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"BOXES_CRITIEA_VME": null,
+							"SHRINK_WRAPS": null,
+							"VIN_SHIPMENTMETHOD": null,
+							"VIN_GRADES": "Testing",
+							"VIN_SOL_LINESTATUS": 1,
+							"CHECK_BY": null,
+							"TOTAL_CHECK": "11",
+							"BLUE_LABEL": null,
+							"PRINTING_GRADE": null,
+							"GRADE_LABEL": "YES",
+							"STAINS_BAG": null,
+							"NO_DAMAGE_BAG": null,
+							"CONTAINER_NO": "1",
+							"PURPOSE": "K2",
+							"GREEN_LABEL": null,
+							"AOC_LABEL": null,
+							"BAGS_YELLOW_COLOR": null,
+							"BLUE_LABEL_REMOVE": null,
+							"BARCODE_QR_LABEL": null,
+							"VIN_LOTNO": "111",
+							"CARDBOARD_SEPERATOR_VME": null,
+							"SUPERVISOR": null,
+							"RED_LABEL": null,
+							"PACKING_TYPE": null,
+							"CUSTCONTAINER": "TriTest-1",
+							"VIN_CUSTSYSNO": "TriTest",
+							"CARGO_TYPE": "K2",
+							"CHECKING_DATE": "2020-06-22T00:00:00",
+							"CARGO_PACKS_VME": null,
+							"ANY_TAPES_ON_BAG": null,
+							"FOR_ANY_NO_ITEM_MEMO": null,
+							"FOR_OTHER_DEFECTS_MEMO": null,
+							"STRETCHFILM_WRAPS": null,
+							"PALLETS_SHRINK_WRAPS": null,
+							"WOODEN_MATERIALS_ISPM": null,
+							"QR_LABEL_PASTE": null,
+							"NO_PALLETS_DAMAGE": null,
+							"SHRINK_WRAPS_MID_PORTION": null,
+							"PE_FOAM_PLACED": null,
+							"NO_MISSING_BAGS": null,
+							"NO_FOREIGN_OBJECTS": null,
+							"REFM_PROGRAMTYPE": null,
+							"ITEMSTATE": null,
+							"LUBRIZOL": null,
+							"TAF_PE_FOAM": null,
+							"VIN_PLANNEDRECEIVEDDATE_ETA": null,
+							"VIN_PLANNEDDELIVERYDATE_ETD": null,
+							"ETA_SG": null,
+							"TRUCK_IN_DATE": null,
+							"K2_CONTAINERNO": null,
+							"K2_STATUS": null,
+							"VIN_PACKINGSTATUS": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadCargo"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadCargo": {
+			"description": "Model for ReadCargo",
+			"required": [
+				"VIN_CUSTSYSNO"
+			],
+			"properties": {
+				"VIN_CUSTSYSNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CHECKING_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"CONTAINER_NO": {
+					"type": "string",
+					"x-example": "1"
+				},
+				"VIN_GRADES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_LOTNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PURPOSE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"STAINS_BAG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ANY_TAPES_ON_BAG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_DAMAGE_BAG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BOXES_CRITIEA_VME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRINTING_GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_YELLOW_COLOR": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHRINK_WRAPS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_PACKS_VME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARDBOARD_SEPERATOR_VME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SUPERVISOR": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RED_LABEL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AOC_LABEL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BLUE_LABEL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BLUE_LABEL_REMOVE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GREEN_LABEL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADE_LABEL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BARCODE_QR_LABEL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_SHIPMENTMETHOD": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_SOL_LINESTATUS": {
+					"type": "integer",
+					"format": "int32",
+					"x-example": "1"
+				},
+				"FOR_ANY_NO_ITEM_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FOR_OTHER_DEFECTS_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"QR_LABEL_PASTE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_PALLETS_DAMAGE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"STRETCHFILM_WRAPS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETS_SHRINK_WRAPS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"WOODEN_MATERIALS_ISPM": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHRINK_WRAPS_MID_PORTION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PE_FOAM_PLACED": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_MISSING_BAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_FOREIGN_OBJECTS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REFM_PROGRAMTYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ITEMSTATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LUBRIZOL": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TAF_PE_FOAM": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_PLANNEDRECEIVEDDATE_ETA": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"VIN_PLANNEDDELIVERYDATE_ETD": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"ETA_SG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TRUCK_IN_DATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_CONTAINERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_PACKINGSTATUS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_CARGO",
+			"description": "Operations about TBLEDI_MELS_TALLY_CARGO"
+		}
+	]
+}
