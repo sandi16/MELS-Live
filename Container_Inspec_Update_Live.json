@@ -1,0 +1,236 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "TeckWah Update Container Inspection",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.1"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_CONTAINER": {
+			"post": {
+				"tags": [
+					"CognitiveServices"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/ContainerDetails"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"ContainerDetails": {
+			"type": "object",
+			"properties": {
+				"VIN_CUSTSYSNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TYPE_OF_JOB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_CARRIER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_HAULIER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TYPE_OF_CONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOADING_PLACE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SBU_LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FINAL_DISPOSITION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_SECURITY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_AFFIXED": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"INSPECTOR_NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"INSPECTOR_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"REVIEWER_NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REVIEWER_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"OUTSIDE_CARRIAGE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"OUTSIDE_CARRIAGE_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGHT_SIDE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGHT_SIDE_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_SIDE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_SIDE_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FRONT_WALL_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FRONT_WALL_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"OTHERS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"OTHERS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "test-1"
+				},
+				"TYPE_OF_CONTAINER_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOADING_PLACE_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_CONTAINERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_SEALNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_HIGH_REASONS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_HIGH_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ADMIN_RE_CHECK_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ETA_SG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TRUCK_IN_DATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_CONTAINER",
+			"description": "Operations about updating values using TBLEDI_MELS_TALLY_CONTAINER"
+		}
+	]
+}
