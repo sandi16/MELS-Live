@@ -60,21 +60,21 @@
 							"INSPECTOR_DATE": null,
 							"REVIEWER_NAME": null,
 							"REVIEWER_DATE": null,
-							"OUTSIDE_CARRIAGE_CHECK": null,
+							"SUPPORT_BEAMS_OUTSIDE_CHECK": null,
 							"OUTSIDE_CARRIAGE_PROBLEMS": null,
-							"DOORS_CHECK": null,
+							"SECURE_DOORS_CHECK": null,
 							"DOORS_PROBLEMS": null,
-							"RIGHT_SIDE_CHECK": null,
+							"UNUSUAL_REPAIRS_RIGHT_CHECK": null,
 							"RIGHT_SIDE_PROBLEMS": null,
-							"LEFT_SIDE_CHECK": null,
+							"UNUSUAL_REPAIRS_LEFT_CHECK": null,
 							"LEFT_SIDE_PROBLEMS": null,
-							"FRONT_WALL_CHECK": null,
+							"BLOCK_VENTS_FRONT_CHECK": null,
 							"FRONT_WALL_PROBLEMS": null,
-							"CEILING_CHECK": null,
+							"BLOCK_VENTS_CEILING_CHECK": null,
 							"CEILING_PROBLEMS": null,
-							"FLOOR_CHECK": null,
+							"FLOOR_FLAT_CHECK": null,
 							"FLOOR_PROBLEMS": null,
-							"OTHERS_CHECK": null,
+							"NO_ODOUR_OTHERS_CHECK": null,
 							"OTHERS_PROBLEMS": null,
 							"CUSTCONTAINER": null,
 							"TYPE_OF_CONTAINER_MEMO": null,
@@ -86,7 +86,33 @@
 							"ADMIN_RE_CHECK_MEMO": null,
 							"ETA_SG": null,
 							"TRUCK_IN_DATE": null,
-							"K2_STATUS": null
+							"K2_STATUS": null,
+							"CONTAINER_NO_OUTSIDE_CHECK":null,
+							"COLOR_DOORS_CHECK":null,
+							"LOOSE_BOLT_DOORS_CHECK": null,
+							"PLATES_DOORS_CHECK": null,
+							"DOORS_CLOSE_GAP_CHECK": null,
+							"REPAIRS_WALLS_RIGHT_CHECK": null,
+							"TOOL_TAP_RIGHT_CHECK": null,
+							"NO_HOLES_RIGHT_CHECK": null,
+							"NO_OIL_RIGHT_CHECK": null,
+							"REPARIS_WALLS_LEFT_CHECK": null,
+							"TOOL_TAP_LEFT_CHECK": null,
+							"NO_HOLES_LEFT_CHECK": null,
+							"NO_OIL_LEFT_CHECK": null,
+							"TOOL_TAP_FRONT_CHECK": null,
+							"NO_HOLES_FRONT_CHECK": null,
+							"NO_OIL_FRONT_CHECK": null,
+							"UNCOMFORTABLE_CEILING_CHECK": null,
+							"REPAIRS_CEILING_CHECK": null,
+							"TOOL_TAP_CEILING_CHECK": null,
+							"NO_HOLES_CEILING_CHECK": null,
+							"NO_OIL_CEILING_CHECK": null,
+							"FLOOR_HEIGHT_CHECK": null,
+							"UNUSUAL_FLOOR_CHECK": null,
+							"NO_HOLES_FLOOR_CHECK": null,
+							"NO_OIL_FLOOR_CHECK": null,
+							"HIDDEN_OTHERS_CHECK": null
 						}
 					}
 				}
@@ -197,7 +223,7 @@
 					"format": "date-time",
 					"x-example": "2020-04-14T10:47:24"
 				},
-				"OUTSIDE_CARRIAGE_CHECK": {
+				"SUPPORT_BEAMS_OUTSIDE_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -205,7 +231,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"DOORS_CHECK": {
+				"SECURE_DOORS_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -213,7 +239,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"RIGHT_SIDE_CHECK": {
+				"UNUSUAL_REPAIRS_RIGHT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -221,7 +247,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"LEFT_SIDE_CHECK": {
+				"UNUSUAL_REPAIRS_LEFT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -229,7 +255,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"FRONT_WALL_CHECK": {
+				"BLOCK_VENTS_FRONT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -237,7 +263,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"CEILING_CHECK": {
+				"BLOCK_VENTS_CEILING_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -245,7 +271,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"FLOOR_CHECK": {
+				"FLOOR_FLAT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -254,7 +280,7 @@
 					"format": "int32",
 					"x-example": "1"
 				},
-				"OTHERS_CHECK": {
+				"NO_ODOUR_OTHERS_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -303,6 +329,110 @@
 					"x-example": ""
 				},
 				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO_OUTSIDE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COLOR_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_BOLT_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PLATES_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_CLOSE_GAP_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_WALLS_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPARIS_WALLS_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNCOMFORTABLE_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_HEIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HIDDEN_OTHERS_CHECK": {
 					"type": "string",
 					"x-example": ""
 				}
