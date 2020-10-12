@@ -53,7 +53,7 @@
 				},
 				"VIN_CARRIER": {
 					"type": "string",
-					"x-example": ""
+					"x-example": "1"
 				},
 				"VIN_HAULIER": {
 					"type": "string",
@@ -109,7 +109,7 @@
 					"format": "date-time",
 					"x-example": "2020-04-14T10:47:24"
 				},
-				"OUTSIDE_CARRIAGE_CHECK": {
+				"SUPPORT_BEAMS_OUTSIDE_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -117,7 +117,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"DOORS_CHECK": {
+				"SECURE_DOORS_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -125,7 +125,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"RIGHT_SIDE_CHECK": {
+				"UNUSUAL_REPAIRS_RIGHT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -133,7 +133,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"LEFT_SIDE_CHECK": {
+				"UNUSUAL_REPAIRS_LEFT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -141,7 +141,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"FRONT_WALL_CHECK": {
+				"BLOCK_VENTS_FRONT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -149,7 +149,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"CEILING_CHECK": {
+				"BLOCK_VENTS_CEILING_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -157,15 +157,16 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"FLOOR_CHECK": {
+				"FLOOR_FLAT_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
 				"FLOOR_PROBLEMS": {
-					"type": "string",
-					"x-example": ""
+					"type": "integer",
+					"format": "int32",
+					"x-example": "1"
 				},
-				"OTHERS_CHECK": {
+				"NO_ODOUR_OTHERS_CHECK": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -175,7 +176,7 @@
 				},
 				"CUSTCONTAINER": {
 					"type": "string",
-					"x-example": "test-1"
+					"x-example": ""
 				},
 				"TYPE_OF_CONTAINER_MEMO": {
 					"type": "string",
@@ -214,6 +215,110 @@
 					"x-example": ""
 				},
 				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO_OUTSIDE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COLOR_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_BOLT_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PLATES_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_CLOSE_GAP_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_WALLS_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPARIS_WALLS_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNCOMFORTABLE_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_HEIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HIDDEN_OTHERS_CHECK": {
 					"type": "string",
 					"x-example": ""
 				}
