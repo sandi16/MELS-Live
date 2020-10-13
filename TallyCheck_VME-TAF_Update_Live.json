@@ -788,6 +788,10 @@
 				"PHOTOCHECK": {
 					"type": "string",
 					"x-example": ""
+				},
+				"LOOSE_PACK_REMARKS": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
