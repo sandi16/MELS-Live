@@ -162,9 +162,8 @@
 					"x-example": ""
 				},
 				"FLOOR_FLAT_PROBLEMS": {
-					"type": "integer",
-					"format": "int32",
-					"x-example": "1"
+					"type": "string",
+					"x-example": ""
 				},
 				"NO_ODOUR_OTHERS_CHECK": {
 					"type": "string",
