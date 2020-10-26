@@ -321,6 +321,110 @@
 				"HIDDEN_OTHERS_CHECK": {
 					"type": "string",
 					"x-example": ""
+				},
+				"CONTAINER_NO_OUTSIDE_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COLOR_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_BOLT_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PLATES_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_CLOSE_GAP_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_WALLS_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPARIS_WALLS_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNCOMFORTABLE_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_HEIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HIDDEN_OTHERS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
