@@ -113,7 +113,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"OUTSIDE_CARRIAGE_PROBLEMS": {
+				"SUPPORT_BEAMS_OUTSIDE_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -121,7 +121,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"DOORS_PROBLEMS": {
+				"SECURE_DOORS_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -129,7 +129,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"RIGHT_SIDE_PROBLEMS": {
+				"UNUSUAL_REPAIRS_RIGHT_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -137,7 +137,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"LEFT_SIDE_PROBLEMS": {
+				"UNUSUAL_REPAIRS_LEFT_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -145,7 +145,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"FRONT_WALL_PROBLEMS": {
+				"BLOCK_VENTS_FRONT_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -153,7 +153,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"CEILING_PROBLEMS": {
+				"BLOCK_VENTS_CEILING_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -161,7 +161,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"FLOOR_PROBLEMS": {
+				"FLOOR_FLAT_PROBLEMS": {
 					"type": "integer",
 					"format": "int32",
 					"x-example": "1"
@@ -170,7 +170,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"OTHERS_PROBLEMS": {
+				"NO_ODOUR_OTHERS_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
 				},
