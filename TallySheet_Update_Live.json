@@ -437,6 +437,10 @@
 				"SHR_CARDBOARD_6PLY_QTY": {
 					"type": "string",
 					"x-ecample": ""
+				},
+				"MAXGW": {
+					"type": "string",
+					"x-ecample": ""
 				}
 			}
 		}
