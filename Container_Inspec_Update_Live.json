@@ -424,6 +424,10 @@
 				"HIDDEN_OTHERS_PROBLEMS": {
 					"type": "string",
 					"x-example": ""
+				},
+				"VIN_PACKINGSTATUS": {
+					"type": "string",
+					"x-example":""
 				}
 			}
 		}
