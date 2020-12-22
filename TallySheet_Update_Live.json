@@ -453,6 +453,10 @@
 				"MIX_GRADE": {
 					"type": "string",
 					"x-ecample": ""
+				},
+				"PACKING_TYPE": {
+					"type": "string",
+					"x-ecample": ""
 				}
 			}
 		}
