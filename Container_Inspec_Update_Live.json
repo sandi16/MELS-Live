@@ -428,6 +428,10 @@
 				"VIN_PACKINGSTATUS": {
 					"type": "string",
 					"x-example":""
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-example":""
 				}
 			}
 		}
