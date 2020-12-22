@@ -145,7 +145,8 @@
 							"MAXGW": null,
 							"STUFFING_PLAN":null,
 							"MIX_LOT":null,
-							"MIX_GRADE":null
+							"MIX_GRADE":null,
+							"PACKING_TYPE": null
 						}
 					}
 				}
@@ -598,6 +599,10 @@
 					"x-ecample": ""
 				},
 				"MIX_GRADE": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"PACKING_TYPE":{
 					"type": "string",
 					"x-ecample": ""
 				}
