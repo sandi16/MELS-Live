@@ -95,7 +95,10 @@
 							"TRUCK_IN_DATE": null,
 							"K2_CONTAINERNO": null,
 							"K2_STATUS": null,
-							"VIN_PACKINGSTATUS": null
+							"VIN_PACKINGSTATUS": null,
+							"STUFFING_PLAN": null,
+							"MIX_LOT": null,
+							"MIX_GRADE": null
 						}
 					}
 				}
@@ -351,6 +354,18 @@
 				"VIN_PACKINGSTATUS": {
 					"type": "string",
 					"x-example": ""
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"MIX_LOT": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"MIX_GRADE": {
+					"type": "string",
+					"x-ecample": ""
 				}
 			}
 		}
