@@ -142,7 +142,10 @@
 							"TRUCK_IN_DATE": null,
 							"K2_TALLY_CLARK_STATUS": null,
 							"SHR_CARDBOARD_6PLY_QTY": null,
-							"MAXGW": null
+							"MAXGW": null,
+							"STUFFING_PLAN":null,
+							"MIX_LOT":null,
+							"MIX_GRADE":null
 						}
 					}
 				}
@@ -583,6 +586,18 @@
 					"x-ecample": ""
 				},
 				"MAXGW": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"MIX_LOT": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"MIX_GRADE": {
 					"type": "string",
 					"x-ecample": ""
 				}
