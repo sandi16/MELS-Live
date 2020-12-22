@@ -441,6 +441,18 @@
 				"MAXGW": {
 					"type": "string",
 					"x-ecample": ""
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"MIX_LOT": {
+					"type": "string",
+					"x-ecample": ""
+				},
+				"MIX_GRADE": {
+					"type": "string",
+					"x-ecample": ""
 				}
 			}
 		}
