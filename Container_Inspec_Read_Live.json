@@ -139,7 +139,8 @@
 							"NO_HOLES_FLOOR_PROBLEMS": null,
 							"NO_OIL_FLOOR_PROBLEMS" : null,
 							"HIDDEN_OTHERS_PROBLEMS" : null,
-							"VIN_PACKINGSTATUS" : null
+							"VIN_PACKINGSTATUS" : null,
+							"STUFFING_PLAN" : null
 						}
 					}
 				}
@@ -569,7 +570,11 @@
 				"VIN_PACKINGSTATUS": {
 					"type": "string",
 					"x-example": ""
-				}	
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-example": ""
+				}
 			}
 		}
 	},
