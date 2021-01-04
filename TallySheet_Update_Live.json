@@ -424,11 +424,11 @@
 				},
 				"ETA_SG_DATE": {
 					"type": "date-time",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"TRUCK_IN_DATE": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"K2_TALLY_CLARK_STATUS": {
 					"type": "string",
@@ -436,27 +436,27 @@
 				},
 				"SHR_CARDBOARD_6PLY_QTY": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"MAXGW": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"STUFFING_PLAN": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"MIX_LOT": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"MIX_GRADE": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"PACKING_TYPE": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				}
 			}
 		}
