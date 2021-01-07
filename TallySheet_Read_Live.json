@@ -143,9 +143,9 @@
 							"K2_TALLY_CLARK_STATUS": null,
 							"SHR_CARDBOARD_6PLY_QTY": null,
 							"MAXGW": null,
-							"STUFFING_PLAN":null,
-							"MIX_LOT":null,
-							"MIX_GRADE":null,
+							"STUFFING_PLAN": null,
+							"MIX_LOT": null,
+							"MIX_GRADE": null,
 							"PACKING_TYPE": null
 						}
 					}
@@ -602,7 +602,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"PACKING_TYPE":{
+				"PACKING_TYPE": {
 					"type": "string",
 					"x-example": ""
 				}
