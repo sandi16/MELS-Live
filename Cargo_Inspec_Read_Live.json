@@ -357,15 +357,15 @@
 				},
 				"STUFFING_PLAN": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"MIX_LOT": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				},
 				"MIX_GRADE": {
 					"type": "string",
-					"x-ecample": ""
+					"x-example": ""
 				}
 			}
 		}
