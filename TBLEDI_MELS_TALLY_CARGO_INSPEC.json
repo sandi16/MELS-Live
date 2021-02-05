@@ -1,0 +1,167 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210/",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_CARGO_INSPEC": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_CARGO_INSPEC"
+				],
+				"description": "Read CargoInspec",
+				"operationId": "Read_CargoInspec",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"VIN_CUSTSYSNO": null,
+							"CONTAINER_NO": null,
+							"VIN_GRADES": null,
+							"VIN_LOTNO": null,
+							"CUSTCONTAINER": 1,
+							"VIN_DELIVERYMETHOD": null,
+							"VIN_SOL_LINESTATUS": "1",
+							"CUSTCONTAINER_ITEMLOT": null,
+							"PACKING_TYPE": null,
+							"ITEMNO": "YES",
+							"VIN_TYPE_OF_CONTAINER": null,
+							"ORDEREDQTY": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadCargoInspec"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadCargoInspec": {
+			"description": "Model for ReadCargoInspec",
+			"required": [
+				"VIN_CUSTSYSNO"
+			],
+			"properties": {
+				"VIN_CUSTSYSNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_GRADES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_LOTNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_DELIVERYMETHOD": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_SOL_LINESTATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER_ITEMLOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ITEMNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TYPE_OF_CONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDEREDQTY": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_CARGO_INSPEC",
+			"description": "Operations about TBLEDI_MELS_TALLY_CARGO_INSPEC"
+		}
+	]
+}
