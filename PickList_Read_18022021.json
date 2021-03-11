@@ -58,7 +58,8 @@
 							"PICKQTY": null,
 							"PRODUCTTYPE": null,
 							"CONTAINERNO": null,
-							"CUSTCONTAINER": null
+							"CUSTCONTAINER": null,
+							"PALLETID": null
 						}
 					}
 				}
@@ -160,6 +161,10 @@
 					"x-example": ""
 				},
 				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETID": {
 					"type": "string",
 					"x-example": ""
 				}
