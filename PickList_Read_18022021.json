@@ -59,7 +59,12 @@
 							"PRODUCTTYPE": null,
 							"CONTAINERNO": null,
 							"CUSTCONTAINER": null,
-							"PALLETID": null
+							"PALLETID": null,
+							"VIN_GRADES": null,
+							"CUSTCONTAINERPOS":null,
+							"EDI_STATUS":null,
+							"CHECK_LIST":null
+							
 						}
 					}
 				}
@@ -165,6 +170,22 @@
 					"x-example": ""
 				},
 				"PALLETID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_GRADES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINERPOS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"EDI_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CHECK_LIST": {
 					"type": "string",
 					"x-example": ""
 				}
