@@ -102,6 +102,10 @@
 				"CUSTCONTAINERNO": {
 					"type": "string",
 					"x-example": ""
+				},
+				"EDI_STATUS": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
