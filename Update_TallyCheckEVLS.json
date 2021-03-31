@@ -23,7 +23,7 @@
 						"schema": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/TALLY CHECK_EVLS_Details"
+								"$ref": "#/definitions/TALLY_CHECK_EVLS_Details"
 							}
 						}
 					}
@@ -40,7 +40,7 @@
 		}
 	},
 	"definitions": {
-		"TALLY CHECK_EVLS_Details": {
+		"TALLY_CHECK_EVLS_Details": {
 			"type": "object",
 			"properties": {
 				"TALLYCHECK_EVLS_ID": {
