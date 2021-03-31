@@ -40,7 +40,7 @@
 		}
 	},
 	"definitions": {
-		"TALLY CHECK_VMETAF_Details": {
+		"TALLY_CHECK_VMETAF_Details": {
 			"type": "object",
 			"properties": {
 				"TALLYCHECK_VMETAF_ID": {
