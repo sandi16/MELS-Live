@@ -1,0 +1,138 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_K2_AUDIT": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_K2_AUDIT"
+				],
+				"description": "Read K2 AUDIT",
+				"operationId": "Read_K2 AUDIT",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"ACTION_USER_ID": null,
+							"ACTION_DISPLAY_NAME": null,
+							"ACTION_DATE": null,
+							"ACTION_STATUS": null,
+							"ACTION_ACTIVITY": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadK2Aduit"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadK2Aduit": {
+			"description": "Model for ReadK2Aduit",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_USER_ID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_DISPLAY_NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": ""
+				},
+				"ACTION_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_ACTIVITY": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_CHECK_EVLS",
+			"description": "Operations about TBLEDI_MELS_TALLY_CHECK_EVLS"
+		}
+	]
+}
