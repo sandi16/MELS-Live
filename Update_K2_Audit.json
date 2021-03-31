@@ -23,7 +23,7 @@
 						"schema": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/TALLY K2_AUDIT_Details"
+								"$ref": "#/definitions/TALLY_K2_AUDIT_Details"
 							}
 						}
 					}
@@ -40,7 +40,7 @@
 		}
 	},
 	"definitions": {
-		"TALLY K2_AUDIT_Details": {
+		"TALLY_K2_AUDIT_Details": {
 			"type": "object",
 			"properties": {
 				"CUSTCONTAINER": {
