@@ -40,7 +40,7 @@
 		}
 	},
 	"definitions": {
-		"TALLY CHECK_EVLS_Details": {
+		"TALLY K2_AUDIT_Details": {
 			"type": "object",
 			"properties": {
 				"CUSTCONTAINER": {
