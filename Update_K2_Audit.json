@@ -1,0 +1,87 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "TeckWah Update REST",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.1"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_K2_AUDIT": {
+			"post": {
+				"tags": [
+					"CognitiveServices"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/TALLY K2_AUDIT_Details"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"TALLY CHECK_EVLS_Details": {
+			"type": "object",
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_USER_ID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_DISPLAY_NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": ""
+				},
+				"ACTION_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ACTION_ACTIVITY": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_K2_AUDIT",
+			"description": "Operations about updating values using TBLEDI_MELS_TALLY_K2_AUDIT"
+		}
+	]
+}
