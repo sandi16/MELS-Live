@@ -146,7 +146,10 @@
 							"STUFFING_PLAN": null,
 							"MIX_LOT": null,
 							"MIX_GRADE": null,
-							"PACKING_TYPE": null
+							"PACKING_TYPE": null,
+							"K2_AUDIT_STATUS":null,
+							"K2_AUDIT_DATE": null
+							
 						}
 					}
 				}
@@ -605,7 +608,15 @@
 				"PACKING_TYPE": {
 					"type": "string",
 					"x-example": ""
-				}
+				},
+				"K2_AUDIT_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_AUDIT_DATE": {
+					"type": "date-time",
+					"x-example": ""
+				},
 			}
 		}
 	},
