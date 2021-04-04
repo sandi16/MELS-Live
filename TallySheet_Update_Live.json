@@ -457,6 +457,14 @@
 				"PACKING_TYPE": {
 					"type": "string",
 					"x-example": ""
+				},
+				"K2_AUDIT_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_AUDIT_DATE": {
+					"type": "date-time",
+					"x-example": ""
 				}
 			}
 		}
