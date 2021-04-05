@@ -50,7 +50,14 @@
 							"LOT": null,
 							"PRODUCTTYPE": null,
 							"TABLE_DETAILS": null,
-							"PROGAM_TYPE": null
+							"PROGAM_TYPE": null,
+							"TABLE_DETAILS1": null,
+							"TABLE_DETAILS2": null,
+							"TABLE_DETAILS3": null,
+							"TABLE_DETAILS4": null,
+							"TABLE_DETAILS5": null,
+							"TOTAL_DETAILS": null
+							
 						}
 					}
 				}
@@ -120,6 +127,30 @@
 					"x-example": ""
 				},
 				"PROGAM_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_DETAILS": {
 					"type": "string",
 					"x-example": ""
 				}
