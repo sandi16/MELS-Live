@@ -81,7 +81,7 @@
 				},
 				"TABLE_DETAILS3": {
 					"type": "string",
-					"x-example": ""
+					"x-example": "ex"
 				},
 				"TABLE_DETAILS4": {
 					"type": "string",
