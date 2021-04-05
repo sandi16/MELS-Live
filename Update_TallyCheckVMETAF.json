@@ -70,6 +70,30 @@
 				"PROGAM_TYPE": {
 					"type": "string",
 					"x-example": ""
+				},
+				"TABLE_DETAILS1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS3": {
+					"type": "string",
+					"x-example": ""
+				}
+				"TABLE_DETAILS4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TABLE_DETAILS5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_DETAILS": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
