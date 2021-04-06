@@ -56,7 +56,10 @@
 							"TABLE_DETAILS3": null,
 							"TABLE_DETAILS4": null,
 							"TABLE_DETAILS5": null,
-							"TOTAL_DETAILS": null
+							"TOTAL_DETAILS": null,
+							"LEFT1": null,
+							"END1": null,
+							"RIGHT1" null
 							
 						}
 					}
@@ -151,6 +154,18 @@
 					"x-example": ""
 				},
 				"TOTAL_DETAILS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"END1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGHT1": {
 					"type": "string",
 					"x-example": ""
 				}
