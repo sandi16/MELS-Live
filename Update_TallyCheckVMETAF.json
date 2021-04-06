@@ -94,6 +94,18 @@
 				"TOTAL_DETAILS": {
 					"type": "string",
 					"x-example": ""
+				},
+				"LEFT1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"END1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGHT1": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
