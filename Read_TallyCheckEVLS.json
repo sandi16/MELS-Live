@@ -51,7 +51,16 @@
 							"PRODUCTTYPE": null,
 							"TABLE_DETAILS": null,
 							"TABLE_DETAILS2": null,
-							"PROGAM_TYPE": null
+							"PROGAM_TYPE": null,
+							"TOTAL_DETAILS":null,
+							"PALLETID":null,
+							"PALLETID1":null,
+							"ROW_ID":null,
+							"LEFT":null,
+							"END":null,
+							"RIGHT":null
+							
+							
 						}
 					}
 				}
@@ -125,6 +134,38 @@
 					"x-example": ""
 				},
 				"PROGAM_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_DETAILS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETID1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ROW_ID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETID1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"END": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGHT": {
 					"type": "string",
 					"x-example": ""
 				}
