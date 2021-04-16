@@ -1,0 +1,656 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_SHEET": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_SHEET"
+				],
+				"description": "Read tally sheet",
+				"operationId": "Read_TallySheet",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					},
+					{
+						"name": "K2_AuditStatus",
+						"in": "body",
+						"description": "K2_AuditStatus",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/K2AuditStatus"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"SHR_BREAK_PALLET_CHB": null,
+							"SHR_VERIFIED_BY_CS": null,
+							"VIN_SHIPMENTMETHOD": "LCL",
+							"SHR_RE_PALLETIZATION_CHB": null,
+							"SHR_LASHING_COVER": null,
+							"SHR_TIMBER_8FT": null,
+							"SHR_CARDBOARD_PEFOAM_QTY": null,
+							"VME_LABELS_TOTAL_QTY": null,
+							"SHR_LASHING_COVER_CHB": null,
+							"SHR_SHRINK_WRAPPED_CHB": null,
+							"SHR_MEMO": null,
+							"SHR_CARDBOARD_AIRBAG_CHECKBOX": null,
+							"VME_SA_350_CHECKBOX": null,
+							"SHR_SUPPLY_PALLET": null,
+							"CONTAINER_NO": null,
+							"VIN_REFB_AWB": "11",
+							"VME_SHANGHAI_CHECKBOX": null,
+							"VME_ZHUHAI_A5PAPER_CHECKBOX": null,
+							"VME_B113838_CHECKBOX": null,
+							"VME_SHANGHAI_A5PAPER": null,
+							"SHR_RE_PALLETIZATION": null,
+							"SHR_CARDBOARD_PEFOAM_CHECKBOX": null,
+							"VME_LOA_386": null,
+							"VME_SOIL_CHECKBOX": null,
+							"GIN": null,
+							"SHR_SUPPLY_PALLET_CHB": null,
+							"VME_GS_CALTEX_CHECKBOX": null,
+							"VME_ZHUHAI_A5PAPER": null,
+							"SHR_OTHERS_MEMO": null,
+							"SHR_CARDBOARD_AIRBAG_QTY": null,
+							"VIN_REFC": "1",
+							"GRN_CHECKBOX": null,
+							"VME_SHANGHAI_A5PAPER_CHECKBOX": null,
+							"VME_B113838": null,
+							"SHR_TIMBER_220CM": null,
+							"VIN_REFM_PROGRAMTYPE": "VME",
+							"VIN_DELIVERYMETHOD": "LOCAL",
+							"VIN_PLANNEDDELIVERYDATE_ETD": "2020-04-14T10:47:24",
+							"SHR_CARDBOARD_TYGUARD_QTY": null,
+							"SHR_SLIPPED_SHEET_CHB": null,
+							"VIN_REFG_POD": "Singapore",
+							"GRN": null,
+							"VIN_REFA_VESSEL": "11",
+							"SHR_SUPPLY_LABELS_CHB": null,
+							"SHR_CARDBOARD_1PLY_CHECKBOX": null,
+							"VIN_SOL_LINESTATUS": 1,
+							"ETA_CHECKBOX": null,
+							"SHR_SHIPPING_MARKS": null,
+							"VME_SA_350": null,
+							"SHR_CARDBOARD_6PLY_CHECKBOX": null,
+							"SIZE_TYPE": null,
+							"SHR_CARDBOARD_TYGUARD_CHECKBOX": null,
+							"SHR_SUPPLY_LABELS": null,
+							"VIN_PLANNEDRECEIVEDDATE_ETA": "2020-04-14T10:47:24",
+							"WEATHER_CONDITION": null,
+							"VME_ZHUHAI_TRADING_CHECKBOX": null,
+							"VME_SHIPPING_KR_CH": null,
+							"TARE_GROSS_WEIGHT": null,
+							"SHR_CHECKED_BY_TALLY": null,
+							"SHR_CARDBOARD_3PLY_QTY": null,
+							"SEAL_NO": null,
+							"ETD_CHECKBOX": null,
+							"SHR_REQUIRED_MEMO": null,
+							"SHR_CARDBOARD_2PLY_CHECKBOX": null,
+							"VIN_REFC_VOY": "1",
+							"SHR_CARDBOARD_3PLY_CHECKBOX": null,
+							"SHR_CARDBOARD_1PLY_QTY": null,
+							"SHR_CARDBOARD_2PLY_QTY": null,
+							"SHR_RED_MARKING": null,
+							"SHR_SLIPPED_SHEETS": null,
+							"SHR_POCKET": null,
+							"SHR_BREAK_PALLET": null,
+							"VME_LUBRIZOL_CHECKBOX": null,
+							"SHR_SHRINK_WRAPPED": null,
+							"SHR_SAFETY_SHEET": null,
+							"SHR_STRAPPING": null,
+							"SHR_1PLY": null,
+							"SHR_TOTAL_QTY": null,
+							"VME_LUBRIZOL_A5PAPER_CHECKBOX": null,
+							"CUSTCONTAINER": "Cargo-T1-1",
+							"VME_SK_LUBRICANT_CHECKBOX": null,
+							"GIN_CHECKBOX": null,
+							"VIN_CUSTSYSNO": "Cargo-T1",
+							"VME_LOA_386_CHECKBOX": null,
+							"BAY_NO": null,
+							"SHR_STRAPPING_CHB": null,
+							"VME_LUBRIZOL_A5PAPER": null,
+							"SHIPMENT_TYPE": null,
+							"K2_STATUS": null,
+							"VIN_PACKINGSTATUS": null,
+							"VIN_SHIPPINGREMARK_SHR": null,
+							"SHR_POCKET_CHB": null,
+							"SHR_1PLY_CHB": null,
+							"ETA_SG": null,
+							"ETA_SG_DATE": null,
+							"TRUCK_IN_DATE": null,
+							"K2_TALLY_CLARK_STATUS": null,
+							"SHR_CARDBOARD_6PLY_QTY": null,
+							"MAXGW": null,
+							"STUFFING_PLAN": null,
+							"MIX_LOT": null,
+							"MIX_GRADE": null,
+							"PACKING_TYPE": null,
+							"K2_AUDIT_STATUS": null,
+							"K2_AUDIT_DATE": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallySheet"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"K2AuditStatus": {
+			"description": "Model for K2AuditStatus",
+			"required": [
+				"K2_AUDIT_STATUS"
+			],
+			"properties": {
+				"K2_AUDIT_STATUS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		},
+		"ReadTallySheet": {
+			"description": "Model for ReadTallySheet",
+			"required": [
+				"BAY_NO"
+			],
+			"properties": {
+				"BAY_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				},
+				"ETA_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ETD_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GIN": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GIN_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRN": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRN_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHIPMENT_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_1PLY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_BREAK_PALLET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_1PLY_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_1PLY_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_2PLY_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_2PLY_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_3PLY_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_3PLY_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_6PLY_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_AIRBAG_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_AIRBAG_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_PEFOAM_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_PEFOAM_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_TYGUARD_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_TYGUARD_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CHECKED_BY_TALLY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_LASHING_COVER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SUPPLY_PALLET_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_RE_PALLETIZATION_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_OTHERS_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SHRINK_WRAPPED_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_BREAK_PALLET_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_POCKET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_RED_MARKING": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_RE_PALLETIZATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_REQUIRED_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SLIPPED_SHEET_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SAFETY_SHEET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SHIPPING_MARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SHRINK_WRAPPED": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SLIPPED_SHEETS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_STRAPPING": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SUPPLY_LABELS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SUPPLY_PALLET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_TIMBER_220CM": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_TIMBER_8FT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_TOTAL_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_LASHING_COVER_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_STRAPPING_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_SUPPLY_LABELS_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_VERIFIED_BY_CS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIZE_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TARE_GROSS_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_CUSTSYSNO": {
+					"type": "string",
+					"x-example": "Cargo-T1"
+				},
+				"VIN_DELIVERYMETHOD": {
+					"type": "string",
+					"x-example": "LOCAL"
+				},
+				"VIN_PLANNEDDELIVERYDATE_ETD": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"VIN_PLANNEDRECEIVEDDATE_ETA": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"VIN_REFA_VESSEL": {
+					"type": "string",
+					"x-example": "11"
+				},
+				"VIN_REFB_AWB": {
+					"type": "string",
+					"x-example": "11"
+				},
+				"VIN_REFC": {
+					"type": "string",
+					"x-example": "1"
+				},
+				"VIN_REFC_VOY": {
+					"type": "string",
+					"x-example": "1"
+				},
+				"VIN_REFG_POD": {
+					"type": "string",
+					"x-example": "Singapore"
+				},
+				"VIN_REFM_PROGRAMTYPE": {
+					"type": "string",
+					"x-example": "VME"
+				},
+				"VIN_SHIPMENTMETHOD": {
+					"type": "string",
+					"x-example": "LCL"
+				},
+				"VIN_SOL_LINESTATUS": {
+					"type": "integer",
+					"format": "int32",
+					"x-example": "1"
+				},
+				"VME_B113838": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_B113838_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_GS_CALTEX_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_LABELS_TOTAL_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_LOA_386": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_LOA_386_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_LUBRIZOL_A5PAPER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_LUBRIZOL_A5PAPER_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_LUBRIZOL_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SA_350": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SA_350_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SHANGHAI_A5PAPER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SHANGHAI_A5PAPER_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SHANGHAI_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SHIPPING_KR_CH": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SK_LUBRICANT_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_SOIL_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_ZHUHAI_A5PAPER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_ZHUHAI_A5PAPER_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VME_ZHUHAI_TRADING_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"WEATHER_CONDITION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_PACKINGSTATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_SHIPPINGREMARK_SHR": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_POCKET_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_1PLY_CHB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ETA_SG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ETA_SG_DATE": {
+					"type": "date-time",
+					"x-example": ""
+				},
+				"TRUCK_IN_DATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_TALLY_CLARK_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_6PLY_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"MAXGW": {
+					"type": "string",
+					"x-example": ""
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-example": ""
+				},
+				"MIX_LOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"MIX_GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_AUDIT_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_AUDIT_DATE": {
+					"type": "date-time",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_SHEET",
+			"description": "Operations about TBLEDI_MELS_TALLY_SHEET"
+		}
+	]
+}
