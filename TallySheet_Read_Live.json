@@ -616,7 +616,7 @@
 				"K2_AUDIT_DATE": {
 					"type": "date-time",
 					"x-example": ""
-				},
+				}
 			}
 		}
 	},
