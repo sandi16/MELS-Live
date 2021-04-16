@@ -26,15 +26,6 @@
 				],
 				"parameters": [
 					{
-						"name": "CustContainerNo",
-						"in": "body",
-						"description": "Cust_ContainerNo",
-						"required": true,
-						"schema": {
-							"$ref": "#/definitions/CustContainerNo"
-						}
-					},
-					{
 						"name": "K2AuditStatus",
 						"in": "body",
 						"description": "K2_AuditStatus",
@@ -181,18 +172,6 @@
 				},
 				"count": {
 					"type": "integer"
-				}
-			}
-		},
-		"CustContainerNo": {
-			"description": "Model for CustContainerNo",
-			"required": [
-				"CUSTCONTAINER"
-			],
-			"properties": {
-				"CUSTCONTAINER": {
-					"type": "string",
-					"x-example": "Cargo-T1-1"
 				}
 			}
 		},
