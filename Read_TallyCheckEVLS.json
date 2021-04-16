@@ -11,7 +11,7 @@
 		"https"
 	],
 	"paths": {
-		"/TBLEDI_MELS_TALLY_CHECK_VMETAF": {
+		"/TBLEDI_MELS_TALLY_CHECK_EVLS": {
 			"post": {
 				"tags": [
 					"TBLEDI_MELS_TALLY_CHECK_EVLS"
