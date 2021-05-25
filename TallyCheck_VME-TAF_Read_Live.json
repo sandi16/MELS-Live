@@ -63,6 +63,8 @@
 							"LEFT_R16": null,
 							"LEFT_R17": null,
 							"LEFT_R18": null,
+							"LEFT_R19": null,
+							"LEFT_R20": null,
 							"RIGTH_R1": null,
 							"RIGTH_R2": null,
 							"RIGTH_R3": null,
@@ -81,6 +83,8 @@
 							"RIGTH_R16": null,
 							"RIGTH_R17": null,
 							"RIGTH_R18": null,
+							"RIGTH_R19": null,
+							"RIGTH_R20": null,
 							"TALLY_CHECK_BY": null,
 							"TALLY_CHECK_DATE": "2020-06-22T00:00:00",
 							"COUNTER_CHECK_BY": null,
@@ -213,6 +217,14 @@
 					"type": "string",
 					"x-example": ""
 				},
+				"LEFT_R19": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R20": {
+					"type": "string",
+					"x-example": ""
+				},
 				"RIGTH_R1": {
 					"type": "string",
 					"x-example": ""
@@ -282,6 +294,14 @@
 					"x-example": ""
 				},
 				"RIGTH_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R19": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R20": {
 					"type": "string",
 					"x-example": ""
 				},
