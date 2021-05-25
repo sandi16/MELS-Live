@@ -119,6 +119,14 @@
 					"type": "string",
 					"x-example": ""
 				},
+				"LEFT_R19": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R20": {
+					"type": "string",
+					"x-example": ""
+				},
 				"RIGTH_R1": {
 					"type": "string",
 					"x-example": ""
@@ -188,6 +196,14 @@
 					"x-example": ""
 				},
 				"RIGTH_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R19": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R20": {
 					"type": "string",
 					"x-example": ""
 				},
