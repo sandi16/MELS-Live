@@ -16,8 +16,8 @@
 				"tags": [
 					"TBLEDI_MELS_TALLYCHK_PID_VMTAF"
 				],
-				"description": "Read TALLYCHK VMETAF",
-				"operationId": "Read_TALLYCHEK_VMETAF",
+				"description": "Read TALLYCHECK VMETAF",
+				"operationId": "Read_TALLYCHECK_VMETAF",
 				"consumes": [
 					"application/json"
 				],
@@ -103,7 +103,7 @@
 				"data": {
 					"type": "array",
 					"items": {
-						"$ref": "#/definitions/ReadTallyChkVMETAF"
+						"$ref": "#/definitions/ReadTallyCheckVMETAF"
 					}
 				},
 				"count": {
@@ -123,7 +123,7 @@
 				}
 			}
 		},
-		"ReadTallyChkVMETAF": {
+		"ReadTallyCheckVMETAF": {
 			"description": "Model for ReadTallyCheckVMETAF",
 			"required": [
 				"CUSTCONTAINER"
@@ -132,7 +132,6 @@
 				"CUSTCONTAINER": {
 					"type": "string",
 					"x-example": ""
-				},
 				"LEFT_R1": {
 					"type": "string",
 					"x-example": ""
