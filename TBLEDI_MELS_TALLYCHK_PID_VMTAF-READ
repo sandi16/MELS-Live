@@ -1,0 +1,312 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLYCHK_PID_VMTAF": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLYCHK_PID_VMTAF"
+				],
+				"description": "Read TALLYCHK VMETAF",
+				"operationId": "Read_TALLYCHEK_VMETAF",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"LEFT_R1": null,
+							"LEFT_R2": null,
+							"LEFT_R3": null,
+							"LEFT_R4": null,
+							"LEFT_R5": null,
+							"LEFT_R6": null,
+							"LEFT_R7": null,
+							"LEFT_R8": null,
+							"LEFT_R9": null,
+							"LEFT_R10": null,
+							"LEFT_R11": null,
+							"LEFT_R12": null,
+							"LEFT_R13": null,
+							"LEFT_R14": null,
+							"LEFT_R15": null,
+							"LEFT_R16": null,
+							"LEFT_R17": null,
+							"LEFT_R18": null,
+							"LEFT_R19": null,
+							"LEFT_R20": null,
+							"RIGTH_R1": null,
+							"RIGTH_R2": null,
+							"RIGTH_R3": null,
+							"RIGTH_R4": null,
+							"RIGTH_R5": null,
+							"RIGTH_R6": null,
+							"RIGTH_R7": null,
+							"RIGTH_R8": null,
+							"RIGTH_R9": null,
+							"RIGTH_R10": null,
+							"RIGTH_R11": null,
+							"RIGTH_R12": null,
+							"RIGTH_R13": null,
+							"RIGTH_R14": null,
+							"RIGTH_R15": null,
+							"RIGTH_R16": null,
+							"RIGTH_R17": null,
+							"RIGTH_R18": null,
+							"RIGTH_R19": null,
+							"RIGTH_R20": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallyChkVMETAF"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallyCheckVMETAF": {
+			"description": "Model for ReadTallyCheckVMETAF",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R16": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R17": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R19": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LEFT_R20": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R1": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R2": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R3": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R4": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R5": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R6": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R7": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R8": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R9": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R10": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R11": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R12": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R13": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R14": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R15": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R16": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R17": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R18": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R19": {
+					"type": "string",
+					"x-example": ""
+				},
+				"RIGTH_R20": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLYCHK_PID_VMTAF",
+			"description": "Operations about TBLEDI_MELS_TALLYCHK_PID_VMTAF"
+		}
+	]
+}
