@@ -23,7 +23,7 @@
 						"schema": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/TallyChek_VMETAF_Details"
+								"$ref": "#/definitions/TallyCheck_VMETAF_Details"
 							}
 						}
 					}
