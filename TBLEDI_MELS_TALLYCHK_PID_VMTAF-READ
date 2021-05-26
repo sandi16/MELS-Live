@@ -132,6 +132,7 @@
 				"CUSTCONTAINER": {
 					"type": "string",
 					"x-example": ""
+				},
 				"LEFT_R1": {
 					"type": "string",
 					"x-example": ""
