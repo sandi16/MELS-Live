@@ -40,7 +40,7 @@
 		}
 	},
 	"definitions": {
-		"TALLY_K2_AUDIT_Details": {
+		"TALLY_K2_STUFFPLAN_Details": {
 			"type": "object",
 			"properties": {
 				"CUSTCONTAINER": {
