@@ -51,7 +51,7 @@
 							"PRODUCTTYPE": null,
 							"TABLE_DETAILS": null,
 							"TABLE_DETAILS2": null,
-							"PROGAM_TYPE": null,
+							"PROGRAM_TYPE": null,
 							"TOTAL_DETAILS":null,
 							"PALLETID":null,
 							"PALLETID1":null,
@@ -133,7 +133,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"PROGAM_TYPE": {
+				"PROGRAM_TYPE": {
 					"type": "string",
 					"x-example": ""
 				},
