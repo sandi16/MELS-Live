@@ -1,0 +1,120 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "TeckWah Update REST",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.1"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLYCHECK_EVLS": {
+			"post": {
+				"tags": [
+					"CognitiveServices"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/TallyChecker_EVLS_Details"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"TallyChecker_EVLS_Details": {
+			"type": "object",
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_CHECK_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"COUNTER_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COUNTER_CHECK_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"TOTAL_BAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_GROSS_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"MATERIAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TOTAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"EVLS_REMARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PHOTOCHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_PACK_REMARKS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLYCHECK_EVLS",
+			"description": "Operations about updating values using TBLEDI_MELS_TALLYCHECK_EVLS"
+		}
+	]
+}
