@@ -71,7 +71,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"PROGAM_TYPE": {
+				"PROGRAM_TYPE": {
 					"type": "string",
 					"x-example": ""
 				},
