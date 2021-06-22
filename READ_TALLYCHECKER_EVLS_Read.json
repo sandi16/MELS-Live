@@ -1,0 +1,179 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLYCHECK_EVLS": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLYCHECK_EVLS"
+				],
+				"description": "Read TALLYCHECKER EVLS",
+				"operationId": "Read_TALLYCHECKER_EVLS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"TALLY_CHECK_BY": null,
+							"TALLY_CHECK_DATE": "2020-06-22T00:00:00",
+							"COUNTER_CHECK_BY": null,
+							"COUNTER_CHECK_DATE": "2020-06-22T00:00:00",
+							"TOTAL_BAGS": null,
+							"CARGO_GROSS_WEIGHT": null,
+							"MATERIAL_WEIGHT": null,
+							"TOTAL_WEIGHT": null,
+							"VIN_TOTAL_WEIGHT": null,
+							"EVLS_REMARKS": null,
+							"K2_STATUS": null,
+							"PHOTOCHECK": null,
+							"LOOSE_PACK_REMARKS": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallyCheckerEVLS"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallyCheckerEVLS": {
+			"description": "Model for ReadTallyCheckerEVLS",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TALLY_CHECK_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"COUNTER_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COUNTER_CHECK_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"TOTAL_BAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_GROSS_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"MATERIAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TOTAL_WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"EVLS_REMARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PHOTOCHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_PACK_REMARKS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLYCHECK_EVLS",
+			"description": "Operations about TBLEDI_MELS_TALLYCHECK_EVLS"
+		}
+	]
+}
