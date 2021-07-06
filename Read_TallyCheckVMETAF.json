@@ -57,9 +57,8 @@
 							"TABLE_DETAILS4": null,
 							"TABLE_DETAILS5": null,
 							"TOTAL_DETAILS": null,
-							"LEFT1": null,
-							"END1": null,
-							"RIGHT1": null
+							"STATUS_GTOTAL_UPDATE": null,
+							"LOOSE_REMARKS": null
 							
 						}
 					}
@@ -157,15 +156,11 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"LEFT1": {
+				"STATUS_GTOTAL_UPDATE": {
 					"type": "string",
 					"x-example": ""
 				},
-				"END1": {
-					"type": "string",
-					"x-example": ""
-				},
-				"RIGHT1": {
+				"LOOSE_REMARKS": {
 					"type": "string",
 					"x-example": ""
 				}
