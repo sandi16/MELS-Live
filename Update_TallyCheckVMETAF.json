@@ -95,15 +95,11 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"LEFT1": {
+				"STATUS_GTOTAL_UPDATE": {
 					"type": "string",
 					"x-example": ""
 				},
-				"END1": {
-					"type": "string",
-					"x-example": ""
-				},
-				"RIGHT1": {
+				"LOOSE_REMARKS": {
 					"type": "string",
 					"x-example": ""
 				}
