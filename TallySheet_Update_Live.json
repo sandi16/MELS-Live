@@ -465,6 +465,22 @@
 				"K2_AUDIT_DATE": {
 					"type": "date-time",
 					"x-example": ""
+				},
+				"SHR_CARDBOARD_RUNNER_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_PLYWOOD_QTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_RUNNER_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_PLYWOOD_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
