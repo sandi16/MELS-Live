@@ -147,12 +147,12 @@
 							"MIX_LOT": null,
 							"MIX_GRADE": null,
 							"PACKING_TYPE": null,
-							"K2_AUDIT_STATUS":null,
+							"K2_AUDIT_STATUS": null,
 							"K2_AUDIT_DATE": null,
-							"SHR_CARDBOARD_RUNNER_QTY":null,
-							"SHR_CARDBOARD_PLYWOOD_QTY":null,
-							"SHR_CARDBOARD_RUNNER_CHECKBOX":null,
-							"SHR_CARDBOARD_PLYWOOD_CHECKBOX":null
+							"SHR_CARDBOARD_RUNNER_QTY": null,
+							"SHR_CARDBOARD_PLYWOOD_QTY": null,
+							"SHR_CARDBOARD_RUNNER_CHECKBOX": null,
+							"SHR_CARDBOARD_PLYWOOD_CHECKBOX": null
 						}
 					}
 				}
