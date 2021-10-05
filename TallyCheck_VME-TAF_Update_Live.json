@@ -96,7 +96,10 @@
 				"LOOSE_PACK_REMARKS": {
 					"type": "string",
 					"x-example": ""
-				}
+				},
+				"PALLETTYPE": {
+					"type": "string",
+					"x-example": ""
 			}
 		}
 	},
