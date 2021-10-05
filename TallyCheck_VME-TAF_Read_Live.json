@@ -56,7 +56,8 @@
 							"VIN_TOTAL_WEIGHT": null,
 							"K2_STATUS": null,
 							"PHOTOCHECK": null,
-							"LOOSE_PACK_REMARKS": null
+							"LOOSE_PACK_REMARKS": null,
+							"PALLETTYPE": null
 						}
 					}
 				}
@@ -152,6 +153,10 @@
 					"x-example": ""
 				},
 				"LOOSE_PACK_REMARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETTYPE": {
 					"type": "string",
 					"x-example": ""
 				}
