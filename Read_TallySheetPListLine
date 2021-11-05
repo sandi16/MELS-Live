@@ -1,0 +1,211 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_PLIST_LINES": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_PLIST_LINES"
+				],
+				"description": "Read TALLY PLIST LINES",
+				"operationId": "Read_TALLYPLIST_LINES",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"PICKLIST_ID": null,
+							"WAREHOUSE": null,
+							"ORDERNO": null,
+							"CUSTORDERNO": null,
+							"LOCATION": null,
+							"ITEMNO": null,
+							"LOT": null,
+							"ORDEREDQTY": null,
+							"PERBAG": null,
+							"PERPALLET": null,
+							"NUMOFBAGS": null,
+							"PICKQTY": null,
+							"PRODUCTTYPE": null,
+							"CONTAINERNO": null,
+							"CUSTCONTAINER": null,
+							"PALLETID": null,
+							"VIN_GRADES": null,
+							"CUSTCONTAINERPOS": null,
+							"EDI_STATUS": null,
+							"PROGRAM_TYPE": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallyPListLine"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				},
+				{
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				},
+				{
+				"PALLETID": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallyPListLine": {
+			"description": "Model for ReadTallyPListLine",
+			"properties": {
+				"PICKLIST_ID": {
+					"type": "number",
+					"x-example": ""
+				},
+				"WAREHOUSE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ITEMNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDEREDQTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PERBAG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PERPALLET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NUMOFBAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PICKQTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCTTYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PALLETID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_GRADES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINERPOS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"EDI_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PROGRAM_TYPE": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_PLIST_LINES",
+			"description": "Operations about TBLEDI_MELS_TALLY_PLIST_LINES"
+		}
+	]
+}
