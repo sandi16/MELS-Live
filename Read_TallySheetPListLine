@@ -97,12 +97,10 @@
 					"type": "string",
 					"x-example": "Cargo-T1-1"
 				},
-				{
 				"CUSTORDERNO": {
 					"type": "string",
 					"x-example": "Cargo-T1-1"
 				},
-				{
 				"PALLETID": {
 					"type": "string",
 					"x-example": "Cargo-T1-1"
@@ -113,7 +111,7 @@
 			"description": "Model for ReadTallyPListLine",
 			"properties": {
 				"PICKLIST_ID": {
-					"type": "number",
+					"type": "integer",
 					"x-example": ""
 				},
 				"WAREHOUSE": {
