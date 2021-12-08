@@ -296,7 +296,7 @@
 				},
 				"CUSTORDERNO": {
 					"type": "string",
-					"x-example":
+					"x-example": ""
 				}
 			}
 		}
