@@ -206,6 +206,10 @@
 				"RIGTH_R20": {
 					"type": "string",
 					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example":
 				}
 			}
 		}
