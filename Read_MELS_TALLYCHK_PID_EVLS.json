@@ -84,7 +84,8 @@
 							"RIGTH_R17": null,
 							"RIGTH_R18": null,
 							"RIGTH_R19": null,
-							"RIGTH_R20": null
+							"RIGTH_R20": null,
+							"CUSTORDERNO": null
 						}
 					}
 				}
@@ -292,6 +293,10 @@
 				"RIGTH_R20": {
 					"type": "string",
 					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example":
 				}
 			}
 		}
